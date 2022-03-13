@@ -9,8 +9,8 @@ $unit: 2rem;
 // =====================
 
 @mixin manrope{font-family: 'Manrope', sans-serif;}
-@mixin pirata{font-family: 'Pirata One', cursive;}
-@mixin rockSalt {font-family: 'Rock Salt', cursive;}
+@mixin pirata{font-family: 'Pirata One', serif;}
+@mixin rockSalt {font-family: 'Rock Salt', serif;}
 
 // =========== utility classes
 
@@ -37,4 +37,12 @@ $unit: 2rem;
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.handwriting {
+  @include rockSalt;
 }

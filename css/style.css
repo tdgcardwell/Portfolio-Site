@@ -9,6 +9,10 @@
 
 .flex-end { justify-content: flex-end; }
 
+.flex-center { justify-content: center; }
+
+.handwriting { font-family: 'Rock Salt', serif; }
+
 /* Skull Icon ================================== */
 .skull-icon { fill: #0e0f11; }
 
@@ -56,7 +60,7 @@ input:checked + .slider::after { content: "SHOW"; position: absolute; top: 5px; 
 .slider.round:before { border-radius: 50%; }
 
 /* width and height on card */
-.card { background-color: #19030d; width: 100%; height: 15rem; perspective: 1000px; }
+.card { background-color: #1a0800; width: 100%; height: 15rem; perspective: 1000px; }
 
 /* container to position the faces */
 .cardInner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 1s; transform-style: preserve-3d; border-bottom: 1px solid #211d2f; }
@@ -83,9 +87,13 @@ When the overall thing is hovered, flip the bit in the middle!! */
 
 body { background-color: #211d2f; color: #f1eeeb; font-weight: 500; font-family: 'Manrope', sans-serif; }
 
+main { position: relative; }
+
+.modal { position: absolute; top: 0; left: 0; z-index: 1; transform: translate3d(100%, 0, 0); }
+
 header { display: flex; padding: 1rem; gap: 2rem; align-items: center; }
 
-header h1 { font-family: 'Rock Salt', cursive; font-size: 1.5rem; text-align: center; line-height: 1.8rem; }
+header h1 { font-family: 'Rock Salt', serif; font-size: 1.5rem; text-align: center; line-height: 1.8rem; }
 
 .skull-logo { width: 40%; flex-shrink: 0; }
 
@@ -95,9 +103,15 @@ nav i, footer i { font-size: 1.7rem; }
 
 footer { border-bottom: none; }
 
-section { border: 1rem solid #211d2f; padding: 1rem; background-color: #f1eeeb; color: #211d2f; }
+section, .modal { border: 1rem solid #211d2f; padding: 1rem; background-color: #f1eeeb; color: #211d2f; }
 
-section h2 { font-family: 'Pirata One', cursive; color: #e82980; font-size: 2rem; margin: 0 0 1rem; }
+section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-size: 2rem; margin: 0 0 1rem; }
+
+.modal blockquote { margin: 0; }
+
+.modal blockquote i { color: #e82980; }
+
+.avatar { border-radius: 50%; border: 2px solid #fff; aspect-ratio: 1/1; object-fit: cover; width: 40%; }
 
 .btn { display: inline-block; margin: 0; padding: .5rem 1rem; border: 1px solid #ff5f1a; text-decoration: none; color: #ff5f1a; transition: .5s; }
 
