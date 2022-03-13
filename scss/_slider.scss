@@ -1,0 +1,90 @@
+// Inspired by www.w3schools.com/howto/howto_css_switch.asp and adapted from version I used for WebApp Project.
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+  margin-top: .5rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $light;
+  border: 1px solid $dark;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+// to confirm: I understand that this is the part that is the 'toggle' that slides across.
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: 0;
+  bottom: 0;
+
+  background-color: $light;
+  border: 2px solid $dark;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+// and here's where I added the writing.
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: $dark;
+  transition: .7s;
+}
+
+// color changing
+input:checked + .slider {
+  background-color: $primary;
+  border: 2px solid $primary;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $primary;
+}
+
+// I understand that this is the part making the movement happen when the box is checked.
+input:checked + .slider:before {
+  background-color: #fff;
+  border: 2px solid $primary;
+  -webkit-transform: translateX(56px);
+  -ms-transform: translateX(56px);
+  transform: translateX(56px);
+}
+
+// similarly - this changes the writing
+input:checked + .slider::after {
+  content: "SHOW";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  color: #fff;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

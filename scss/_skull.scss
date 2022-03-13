@@ -1,0 +1,48 @@
+/* Skull Icon ================================== */
+
+.skull-icon {
+  fill: #0e0f11;
+}
+
+
+/* separated so can be changed individually */
+#bg, #skull {
+  fill: $light;
+}
+
+#crown,
+#brim {
+  fill: $primary;
+}
+
+#band {
+  fill:$pop;
+}
+
+#browL, #browR, #nose, #outline {
+  fill: $dark;
+}
+
+#eyeL, #eyeR {
+  fill: $primary;
+}
+
+/* Separated so can be colored individually */
+#feather .upper,
+#feather .lower {
+  fill: $dark;
+}
+
+#beard, #stache {
+  fill: $dark;
+}
+
+
+
+.highlight {
+  fill: $primary;
+}
+
+.shade {
+  fill: $dark;
+}

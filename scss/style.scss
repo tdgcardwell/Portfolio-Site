@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Pirata+One&family=Rock+Salt&display=swap');
+@import 'variables','skull', 'slider', 'cards';
+
+
+// =====================
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark;
+  color: $light;
+  font-weight: 500;
+  @include manrope;
+}
+
+header {
+  display: flex;
+  padding: $unit/2;
+  gap: $unit;
+  align-items: center;
+
+  h1{
+    @include rockSalt;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+}
+
+.skull-logo {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+nav, footer {
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  text-align: center;
+  padding: 1rem;
+
+  i {
+    font-size: 1.7rem;
+  }
+}
+
+footer {
+  border-bottom: none;
+}
+
+section {
+  border: $unit/2 solid $dark;
+  padding: $unit/2;
+  background-color: $light;
+  color: $dark;
+
+  h2 {
+    @include pirata;
+    color: $pop;
+    font-size: 2rem;
+    margin: 0 0 1rem;
+  }
+
+}
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: .5rem 1rem;
+  border: 1px solid $primary;
+  text-decoration: none;
+  color: $primary;
+  transition: .5s;
+
+  &:hover {
+    background-color: $primary;
+    color: $light;
+    text-decoration: underline;
+  }
+
+}
+
+.switches {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+// to match sliders
+#searchbar {
+  height: 34px;
+  border-radius: 34px;
+  width: 100%;
+  background-color: $light;
+  border: 1px solid $dark;
+  padding-left: 1rem;
+}

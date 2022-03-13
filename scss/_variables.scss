@@ -1,0 +1,40 @@
+
+$dark : #211d2f;
+$light: #f1eeeb;
+$primary: #ff5f1a;
+$pop: rgb(232,41,128);
+
+$unit: 2rem;
+
+// =====================
+
+@mixin manrope{font-family: 'Manrope', sans-serif;}
+@mixin pirata{font-family: 'Pirata One', cursive;}
+@mixin rockSalt {font-family: 'Rock Salt', cursive;}
+
+// =========== utility classes
+
+// placeholder
+.sth {
+  min-height: 6rem;
+  background-color: #ccc;
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.full {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
