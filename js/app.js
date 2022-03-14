@@ -65,7 +65,7 @@ if (filters.story) {
       filters.dev = false;
     }
 
-    // regenerate
+    filterTheProjects();
 
   });
 
@@ -76,7 +76,7 @@ if (filters.story) {
       filters.design = false;
     }
 
-    // regenerate
+    filterTheProjects();
 
   });
 
@@ -87,15 +87,28 @@ if (filters.story) {
       filters.story = false;
     }
 
-    // regenerate
+    filterTheProjects();
 
   });
 
-
-
-
   // filter the array
   let filteredProjects = [];
+
+  function filterTheProjects(){
+    // reset the array
+    filteredProjects = [];
+    projects.forEach(project => {
+
+      // for each project. if any of those match, push to filtered.
+
+      if ((project.dev && filters.dev) || (project.design && filters.design) || (project.story && filters.story)) {
+        filteredProjects.push(project);
+      }
+
+    });
+
+
+  }
 
   // generate Cards
 
