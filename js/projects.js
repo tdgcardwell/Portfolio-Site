@@ -46,7 +46,7 @@ newProj(
   "https://tdgcardwell.github.io/shot-log/",
   "nabu.png",
   "Web App: Design, HTML, CSS, Javascript.",
-  "Shot logging tool for film making. Uses Local Storage to store logs, and can import/export logs as JSON data. Mobile and Desktop.",
+  "Shot logging tool for film making. Uses localStorage to store logs, and can import/export logs as JSON data. Mobile and Desktop.",
   true,
   true,
   false
@@ -89,8 +89,41 @@ newProj(
   "Film Fix: Mini Site",
   "https://usedphotopro.com/film-fix",
   "film-fix.png",
-  "For UsedPhotoPro. Informational page for Film Fix film subscription service. HTML, CSS, Javascript.",
+  "For UsedPhotoPro. Page for Film Fix film subscription service. HTML, CSS, Javascript.",
   "'Film Fix is a subscription service where you receive two awesome film stocks delivered to your doorstep each month! At Film Fix we want to help you experience all the fun and creativity that film photography has to offer. We know there are a lot of film options to choose from. Film Fix will give you the opportunity to try a wonderful variety of films selected by the film lovers at UsedPhotoPro.''",
+  true,
+  false,
+  false
+);
+
+newProj(
+  "WebApp Dashboard",
+  "#",
+  "test.jpeg",
+  "Techdegree Project. HTML, CSS, SVGs, Javascript. Interactive dashboard for a web application",
+  "Tables, charts, graphics and other user interface components. Uses localStorage to store user settings. Graded 'Exceeds Expectations'.",
+  true,
+  false,
+  false
+);
+
+newProj(
+  "Game Show App",
+  "#",
+  "test.jpeg",
+  "Techdegree Project. HTML, CSS, Javascript. Word guessing game.",
+  "Players guess a random phrase by entering different letters into the program. Graded 'Exceeds Expectations'.",
+  true,
+  false,
+  false
+);
+
+newProj(
+  "Interactive Photo Gallery",
+  "#",
+  "test.jpeg",
+  "Techdegree Project. HTML, CSS, Javascript.An interactive, searchable gallery of photos.",
+  "Built search function. Graded 'Exceeds Expectations'.",
   true,
   false,
   false

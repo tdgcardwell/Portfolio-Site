@@ -60,7 +60,7 @@ input:checked + .slider::after { content: "SHOW"; position: absolute; top: 5px; 
 .slider.round:before { border-radius: 50%; }
 
 /* width and height on card */
-.card { background-color: #1a0800; width: 100%; height: 15rem; perspective: 1000px; }
+.card { background-color: #1a0800; width: 100%; height: 16.5rem; perspective: 500px; }
 
 /* container to position the faces */
 .cardInner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 1s; transform-style: preserve-3d; border-bottom: 1px solid #211d2f; }
