@@ -44,7 +44,7 @@
 
 // and here's where I added the writing.
 .slider::after {
-  content: "";
+  content: "HIDE";
   position: absolute;
   top: 5px;
   right: 15px;
