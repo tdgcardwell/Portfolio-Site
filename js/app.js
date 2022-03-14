@@ -56,6 +56,11 @@ if (filters.story) {
   storyteller.prop("checked", true);
 }
 
+let filteredProjects = [];
+
+// initial filter
+filterTheProjects();
+
   // when a slider changes
 
   developer.change(function() {
@@ -66,6 +71,7 @@ if (filters.story) {
     }
 
     filterTheProjects();
+    generateCards(filteredProjects);
 
   });
 
@@ -77,6 +83,7 @@ if (filters.story) {
     }
 
     filterTheProjects();
+    generateCards(filteredProjects);
 
   });
 
@@ -88,11 +95,12 @@ if (filters.story) {
     }
 
     filterTheProjects();
+    generateCards(filteredProjects);
 
   });
 
   // filter the array
-  let filteredProjects = [];
+
 
   function filterTheProjects(){
     // reset the array
@@ -129,10 +137,12 @@ let cards = document.querySelector('.cards');
 let projectcount = 0;
 
 // just for now
-generateCards(projects);
+generateCards(filteredProjects);
 
 
 function generateCards(data) {
+
+  cards.innerHTML = "";
   data.forEach(project => {
 
     // console.log(project)
