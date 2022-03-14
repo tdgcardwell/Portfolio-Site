@@ -17,6 +17,7 @@ body {
 
 main {
   position: relative;
+  overflow-x: hidden;
 }
 
 .modal {
@@ -24,7 +25,12 @@ main {
   top:0;
   left:0;
   z-index: 1;
+  transition: .5s;
   transform: translate3d(100%, 0, 0);
+}
+
+.modalOn {
+  transform: translate3d(0, 0, 0);
 }
 
 header {
@@ -54,6 +60,12 @@ nav, footer {
 
   i {
     font-size: 1.7rem;
+  }
+}
+
+nav {
+  ul {
+    display: none;
   }
 }
 

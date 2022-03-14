@@ -126,6 +126,9 @@
 
     <nav>
       <i class="fa-solid fa-bars"></i>
+      <ul>
+        <li>example</li>
+      </ul>
     </nav>
 
 
@@ -142,14 +145,14 @@
     <section>
       <p>Favorite Uncle. Part Pirate - Part Wizard. Occasional Mustache-Twirling Villain.</p>
       <div class="flex-box flex-end">
-        <a class="btn" href="#">More...</a>
+        <a class="btn" id="bioButton" href="#">More...</a>
       </div>
     </section>
 
     <!-- hidden -->
     <div class="modal">
 
-      <span class="handwriting">X</span>
+      <span class="handwriting" id="closeModal">X</span>
 
       <h2 class="center">About</h2>
 
@@ -185,7 +188,7 @@
           <label for="developer">Developer</label>
 
           <label class="switch">
-            <input type="checkbox" id="developer" name="developer" value="developer" checked>
+            <input type="checkbox" id="developer" name="developer" value="developer">
             <span class="slider round"></span>
           </label><br>
         </div>
@@ -210,38 +213,13 @@
 
       </div>
 
-      <input id="searchbar" type="search" value="" placeholder="Search...">
+      <input type="text" oninput="cardSearch()" id="searchbar" placeholder="Search..."/>
 
     </section>
     <div class="cards">
-      <div class="card">
-        <div class="cardInner">
-          <div class="cardFront">
-            <div class="picture-box">
-              <img src="https://placeimg.com/640/480/animals/grayscale" alt="">
-            </div>
-            <div class="full">
-              <h3 id="animated-map" class="center">Animated Map</h3>
-              <p class="center"><em>SVG Illustration. CSS and JS Animation.</em></p>
-              <a class="btn" href="#">More...</a>
-            </div>
-          </div>
-          <div class="cardBack">
-            <p class="center">Animated map for UsedPhotoPro, showing route from old location to new.</p>
-          </div>
 
-        </div>
-
-      </div>
 
     </div>
-
-
-
-    <h3 id="the-speckled-band">NABU: Simple Shot Log</h3>
-    <p><em>Web App: Design, HTML, CSS, Javascript.</em></p>
-    <p>Shot logging tool for film making. Uses Local Storage to store logs, and can import/export logs as JSON data.</p>
-    <hr>
 
     <h3 id="the-speckled-band">Film Fix</h3>
     <p><em>Website: HTML, CSS, Javascript.</em></p>
@@ -283,10 +261,6 @@
     <p>Shot logging tool for film making. Uses Local Storage to store logs, and can import/export logs as JSON data.</p>
     <hr>
 
-    <h3 id="the-speckled-band">JS SVG clock face</h3>
-    <p><em>Web App: Design, HTML, CSS, Javascript.</em></p>
-    <p>Shot logging tool for film making. Uses Local Storage to store logs, and can import/export logs as JSON data.</p>
-
 
   <!-- <h3 id="the-speckled-band">The Speckled Band</h3>
   <p><em>Theatre: Script Adaptation, Direction, Lighting Design.</em></p>
@@ -312,4 +286,11 @@
   </footer>
 
   </body>
+  <script
+  src="http://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/projects.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="js/searchbar.js" charset="utf-8"></script>
 </html>
