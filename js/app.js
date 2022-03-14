@@ -100,8 +100,6 @@ filterTheProjects();
   });
 
   // filter the array
-
-
   function filterTheProjects(){
     // reset the array
     filteredProjects = [];
@@ -120,11 +118,6 @@ filterTheProjects();
 
   // generate Cards
 
-  // generateCards(filteredProjects);
-
-
-
-
 //
 // ===================
 //  CARDS generating
@@ -136,7 +129,7 @@ let cards = document.querySelector('.cards');
 // and keep track
 let projectcount = 0;
 
-// just for now
+// initial generation
 generateCards(filteredProjects);
 
 
