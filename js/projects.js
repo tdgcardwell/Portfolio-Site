@@ -119,12 +119,23 @@ newProj(
 );
 
 newProj(
-  "Interactive Photo Gallery",
-  "#",
-  "test.jpeg",
-  "Techdegree Project. HTML, CSS, Javascript.An interactive, searchable gallery of photos.",
-  "Built search function. Graded 'Exceeds Expectations'.",
+  "Alex and Andy",
+  "etc/lemur/lemur-gallery.html",
+  "balloons.jpg",
+  "Character Design, Branding: SVG Illustration.",
+  "Cartoon Lemur Mascots for Roberts Camera and UsedPhotoPro. Image Gallery based on Techdegree Project: HTML, CSS, Javascript. An interactive, searchable gallery of photos. Built search function. Graded 'Exceeds Expectations'.",
   true,
-  false,
+  true,
   false
 );
+
+// newProj(
+//   "Interactive Photo Gallery",
+//   "#",
+//   "test.jpeg",
+//   "Techdegree Project. HTML, CSS, Javascript.An interactive, searchable gallery of photos.",
+//   "Built search function. Graded 'Exceeds Expectations'.",
+//   true,
+//   false,
+//   false
+// );
