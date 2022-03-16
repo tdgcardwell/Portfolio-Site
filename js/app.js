@@ -157,12 +157,12 @@ function generateCards(data) {
           <div class="full">
             <h3 class="center">${project.title}</h3>
             <p class="center"><em>${project.teaser}</em></p>
-            <a class="btn" href="#">More...</a>
+            <a class="btn">More...</a>
           </div>
         </div>
         <div class="cardBack">
           <p class="center">${project.desc}</p>
-          <a class="btn" href="${project.link}" target="_blank">View Live</a>
+          <a class="btn" href="${project.link}" target="_blank">View</a>
         </div>
 
       <!-- /inner -->

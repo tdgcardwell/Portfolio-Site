@@ -1,0 +1,336 @@
+body {
+  display: grid;
+  place-items: center;
+  background-color:#000;
+  height: 100vh;
+}
+
+#Layer_1 {
+  max-width:95vw;
+}
+
+
+.st0{fill:#ecebeb}
+
+.st1{fill:#00abaf}
+
+.st2{fill:none;stroke:#1b78be;stroke-width:16;stroke-miterlimit:10}
+
+.st3{fill:#1b78be}
+
+.st10{stroke:#d6d6d6}
+
+.st10,
+.st11,
+.st12,
+.st4{stroke-miterlimit:10}
+
+.st4{fill:#d6d6d6;stroke:#d6d6d6}
+
+.st4,
+.st5{stroke-width:14}
+
+.st5,
+.st6,
+.st7,
+.st8,
+.st9{stroke:#d6d6d6;stroke-miterlimit:10;fill:none}
+
+.st6{stroke-width:10}
+
+.st7{stroke-width:8}
+
+.st8{stroke-width:4}
+
+.st9{stroke-width:5}
+
+.st10,
+.st11{fill:#e21873;stroke-width:8}
+
+/* locations =================================================== */
+.st11{
+  stroke:#ac1f60;
+  stroke-width:5
+}
+
+.st12{fill:none;stroke:#5b5f61;stroke-width:15}
+
+
+.st13,
+.st14,
+.st15,
+.st16,
+.st17,
+.st18{fill:none;stroke:#e21873;stroke-width:5; stroke-linejoin:}
+
+.st14{stroke-dasharray:12.2999,12.2999}
+
+.st15{stroke-dasharray:11.8355,11.8355}
+
+.st16{stroke-dasharray:11.961,11.961}
+
+.st17{stroke-dasharray:11.9422,11.9422}
+
+.st18{stroke-miterlimit:10;stroke-dasharray:12}
+
+.st19{fill:#5b5f61}
+
+
+
+/* here's the corresponding part */
+
+.routeLine  {
+  stroke-dasharray:10;
+}
+
+.monument {
+  transform-origin: center;
+  transform: rotate(-86deg) scaleX(-1);
+  stroke-dasharray:10;
+  stroke-dashoffset:0;
+}
+
+.stClair {
+  stroke-dasharray:10;
+  stroke-dashoffset:10;
+}
+
+/* so things transform properly! */
+svg * {
+  transform-box: fill-box;
+}
+
+/* ===================================== */
+
+@keyframes pathway {
+
+  0% {
+    stroke-dashoffset:10;
+  }
+  100% {
+    stroke-dashoffset:0;
+  }
+}
+
+@keyframes pathway2 {
+
+  0% {
+    stroke-dashoffset:10;
+    /* to hide the annoying extra bit */
+    opacity: 0;
+  }
+
+  5% {opacity: 1;}
+
+  100% {
+    stroke-dashoffset:5;
+  }
+}
+
+@keyframes pathway3 {
+
+  0% {
+    stroke-dashoffset:10;
+  }
+
+  95% {
+    opacity:1;
+  }
+
+  100% {
+    stroke-dashoffset:0;
+    /* opacity: 0; */
+  }
+}
+
+.meridianA {
+  animation: pathway 4.5s 1s ease-out both;
+}
+
+.dash-overlay {
+  stroke-dasharray:.5;
+  stroke-width:8;
+}
+
+.monument{
+  /* animation: pathway .7s 6s 2.365 ease-out both; */
+  animation: pathway2 1.5s 5.2s 1 linear both;
+
+}
+
+.dash-overlay-monument {
+  stroke-dasharray:.5;
+  stroke-dashoffset: .2;
+  stroke-width:8;
+  /* opacity: 0 */
+}
+
+
+.meridianB {
+  animation: pathway 8s 8s ease-out both;
+}
+
+.dash-overlay-B {
+  stroke-dasharray:.2;
+  stroke-width:8;
+}
+
+@keyframes fadeOut {
+  0% {stroke:#e21873;}
+  100% {stroke:transparent;}
+}
+
+.stClair {
+  animation: pathway3 2.5s 15.9s cubic-bezier(.08,.01,.78,-0.14) both, fadeOut .4s 20s linear both;
+}
+
+
+.dash-overlay-stClair {
+  stroke-dasharray:.3;
+  stroke-dashoffset: .5;
+  stroke-width:8;
+}
+
+
+/* ===================================== */
+
+
+
+@keyframes grow {
+  0% {
+    transform: scale(.25);
+    opacity:0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity:1;
+  }
+
+  80 {
+    transform: scale(.8);
+
+  }
+
+}
+
+.pointA {
+  transform-origin: center;
+  animation: grow 1.2s 2 alternate ease-out forwards;
+}
+
+.pointB {
+  transform-origin: center;
+  animation: grow 1.2s 18.8s ease-out backwards;
+}
+
+
+/* ===================================== */
+
+@keyframes followMe {
+  0% {transform: translate3d(0, 0, 0); opacity:0;}
+  0.5% {opacity:0;}
+  2% {opacity:1;}
+  19% {transform: translate3d(50%, -2000%, 0);}
+  /* --------------- */
+
+  /* SE */
+  20% {transform: translate3d(175%, -2000%, 0);}
+
+  /* right */
+  21% {transform: translate3d(260%, -2200%, 0);}
+
+  /* NE */
+  22% {transform: translate3d(175%, -2475%, 0);}
+
+  /* top */
+  23.5% {transform: translate3d(50%, -2500%, 0);}
+
+  /* NW */
+  /* 24% {transform: translate3d(-45%, -2475%, 0);} */
+
+  /* left */
+  /* 25% {transform: translate3d(-100%, -2200%, 0);} */
+
+  /* SW */
+  /* 25.25% {transform: translate3d(-45%, -2000%, 0);} */
+
+  /* bottom */
+  /* 25.5% {transform: translate3d(50%, -2000%, 0);} */
+
+
+
+  /* SE */
+  /* 25.75% {transform: translate3d(175%, -2000%, 0);} */
+
+  /* right */
+  /* 26% {transform: translate3d(260%, -2200%, 0);} */
+
+  /* NE */
+  /* 26.25% {transform: translate3d(175%, -2475%, 0);} */
+
+  /* top */
+  /* 26.5% {transform: translate3d(50%, -2500%, 0);} */
+
+  /* NW */
+  /* 26.75% {transform: translate3d(-45%, -2475%, 0);} */
+
+  /* left */
+  /* 27% {transform: translate3d(-100%, -2200%, 0);} */
+
+  /* SW */
+  /* 27.25% {transform: translate3d(-45%, -2000%, 0);} */
+
+  /* bottom */
+  /* 27.5% {transform: translate3d(50%, -2000%, 0);} */
+
+
+
+  /* SE */
+  /* 28% {transform: translate3d(175%, -2000%, 0);} */
+
+  /* right */
+  /* 29% {transform: translate3d(260%, -2200%, 0);} */
+
+  /* NE */
+  /* 30% {transform: translate3d(175%, -2475%, 0);} */
+
+  /* top */
+  31% {transform: translate3d(50%, -2550%, 0);}
+
+
+
+  33% {transform: translate3d(50%, -2600%, 0);}
+  /* --------------- */
+  /* 35% {transform: translate3d(50%, -2600%, 0);} */
+
+  /* smoother without these */
+  /* 45% {transform: translate3d(140%, -4000%, 0);}
+  60% {transform: translate3d(170%, -5375%, 0);}
+
+  63% {transform: translate3d(170%, -5975%, 0);}
+
+  67% {transform: translate3d(170%, -6100%, 0);}
+
+  70% {transform: translate3d(170%, -6200%, 0);} */
+
+  75% {transform: translate3d(190%, -6250%, 0);}
+  75.5% {transform: translate3d(400%, -6250%, 0);}
+  76% {transform: translate3d(800%, -6250%, 0);}
+
+  87% {transform: translate3d(1600%, -6200%, 0);}
+
+  95% {opacity:1;}
+  97% {opacity:0;}
+  100% {transform: translate3d(1700%, -6200%, 0); opacity:0;}
+}
+
+
+#indicator {
+
+  animation: followMe 20s 1s ease-out both;
+  stroke-width:3;
+
+  /* display:none; */
+
+}

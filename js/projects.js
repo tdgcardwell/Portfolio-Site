@@ -46,7 +46,7 @@ newProj(
   "https://tdgcardwell.github.io/shot-log/",
   "nabu.png",
   "Web App: Design, HTML, CSS, Javascript.",
-  "Shot logging tool for film making. Uses localStorage to store logs, and can import/export logs as JSON data. Mobile and Desktop.",
+  "Shot logging tool. Uses localStorage to store logs, and can import/export logs as JSON data. Mobile and Desktop.",
   true,
   true,
   false
@@ -54,10 +54,10 @@ newProj(
 
 newProj(
   "Animated Map",
-  "#",
-  "test.jpeg",
+  "etc/map/index.html",
+  "map.png",
   "SVG Illustration. CSS and JS Animation.",
-  "Animated map for UsedPhotoPro, showing route from old location to new.",
+  "Animated map for <a href='https://usedphotopro.com/' target='_blank'>UsedPhotoPro</a>, showing route from old location to new.<br />Used for <a href='https://youtu.be/Tl4_F0bGQho?t=63' target='_blank'>anniversary video</a>.",
   true,
   true,
   false
@@ -123,7 +123,7 @@ newProj(
   "etc/lemur/lemur-gallery.html",
   "balloons.jpg",
   "Character Design, Branding: SVG Illustration.",
-  "Cartoon Lemur Mascots for Roberts Camera and UsedPhotoPro. Image Gallery based on Techdegree Project: HTML, CSS, Javascript. An interactive, searchable gallery of photos. Built search function. Graded 'Exceeds Expectations'.",
+  "Cartoon Lemur Mascots for Roberts Camera and UsedPhotoPro. <br />Image Gallery <a href='https://tdgcardwell.github.io/Project-5_Interactive-Photo-Gallery/' target='_blank'>adapted from Techdegree Project</a>, using HTML, CSS, Javascript: An interactive, searchable gallery of photos.",
   true,
   true,
   false
