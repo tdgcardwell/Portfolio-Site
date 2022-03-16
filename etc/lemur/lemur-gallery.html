@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- Yes... I'm reusing the photo gallery I built for  Treehouse Project.-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex and Andy - Illustrated Lemur Mascots</title>
+
+    <!-- importing baguetteBox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" integrity="sha512-7KzSt4AJ9bLchXCRllnyYUDjfhO2IFEWSa+a5/3kPGQbr+swRTorHQfyADAhSlVHCs1bpFdB1447ZRzFyiiXsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css" integrity="sha512-NVt7pmp5f+3eWRPO1h4A1gCf4opn4r5z2wS1mi7AaVcTzE9wDJ6RzMqSygjDzYHLp+mAJ2/qzXXDHar6IQwddQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="lemur-style.css">
+  </head>
+  <body>
+    <main>
+
+      <div class="">
+        <h1>Heading</h1>
+        <p>Info Text</p>
+      </div>
+
+      <div class="search-area">
+        <input type="text" oninput="captionSearch()" name="search" placeholder="Search" id="searchbar" class="search">
+      </div>
+
+      <div class="photo-grid gallery">
+
+        <a href="lemur-imgs/lemur-headshot.jpg" title="Snarky Lemur Headshot."><img src="lemur-imgs/lemur-headshot.jpg" alt="Headshot"></a>
+
+        <a href="lemur-imgs/balloons.jpg" title="Andy with Balloons to celebrate 10 years of UPP."><img src="lemur-imgs/balloons.jpg" alt="Balloons"></a>
+
+        <a href="lemur-imgs/complicated.png" title="Alex showing just how complicated things can get, in an email advertising 'Back to Basics' Classes."><img src="lemur-imgs/complicated.png" alt="Conspiracy Board"></a>
+
+        <a href="lemur-imgs/email-settings.png" title="Alex and Andy show how to change your email settings."><img src="lemur-imgs/email-settings.png" alt="email settings"></a>
+
+        <a href="lemur-imgs/filming.jpg" title="Poster warning of filming taking place in store."><img src="lemur-imgs/filming.jpg" alt="Filming"></a>
+
+        <a href="lemur-imgs/no-puedo-rc.png" title="Alex can't find the product you searched for on robertscamera.com"><img src="lemur-imgs/no-puedo-rc.png" alt="no puedo"></a>
+
+        <a href="lemur-imgs/no-puedo-upp.png" title="Andy can't find the product you searched for on usedphotopro.com"><img src="lemur-imgs/no-puedo-upp.png" alt="no puedo"></a>
+
+        <a href="lemur-imgs/pirate-404.png" title="Pirate themed 404 pages."><img src="lemur-imgs/pirate-404.png" alt="404"></a>
+
+        <a href="lemur-imgs/treasure-hat.png" title="Alex put on his treasure hunting hat, and found a greaty deal at the garage sale!"><img src="lemur-imgs/treasure-hat.png" alt="treasure hat"></a>
+
+        <a href="lemur-imgs/teaching.jpg" title="Alex teaches the fundamentals of photography."><img src="lemur-imgs/teaching.jpg" alt="teaching the fundamentals."></a>
+
+
+
+
+      </div>
+
+    </main>
+  </body>
+  <script src="lemur-search.js"></script>
+  <script>
+window.addEventListener('load', function() {
+  baguetteBox.run('.gallery', 'captions');
+});
+</script>
+</html>
