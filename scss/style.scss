@@ -167,3 +167,14 @@ section, .modal {
   border: 1px solid $dark;
   padding-left: 1rem;
 }
+
+.card a:not(.btn) {
+  text-decoration: none;
+  color: $pop;
+  transition: .5s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}

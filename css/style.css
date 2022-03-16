@@ -134,3 +134,7 @@ section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-s
 .stack { display: flex; flex-direction: column; }
 
 #searchbar { height: 34px; border-radius: 34px; width: 100%; background-color: #f1eeeb; border: 1px solid #211d2f; padding-left: 1rem; }
+
+.card a:not(.btn) { text-decoration: none; color: #e82980; transition: .5s; }
+
+.card a:not(.btn):hover { text-decoration: underline; }
