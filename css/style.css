@@ -107,6 +107,14 @@ nav ul { display: none; }
 
 footer { border-bottom: none; }
 
+.social { display: flex; gap: 3rem; padding: 1rem; }
+
+.social .social-icon { width: 100%; }
+
+.social .social-icon .icon { fill: #f1eeeb; transition: .5s; }
+
+.social .social-icon .icon:hover { fill: #ff5f1a; }
+
 section, .modal { border: 1rem solid #211d2f; padding: 1rem; background-color: #f1eeeb; color: #211d2f; }
 
 section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-size: 2rem; margin: 0 0 1rem; }

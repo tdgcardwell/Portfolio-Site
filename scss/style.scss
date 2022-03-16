@@ -73,6 +73,29 @@ footer {
   border-bottom: none;
 }
 
+.social{
+  display:flex;
+  gap:3rem;
+  padding:1rem;
+
+  .social-icon {
+
+    width: 100%;
+
+    .icon {
+      fill: $light;
+      transition: .5s;
+
+      &:hover {
+        fill: $primary;
+      }
+
+    }
+
+  }
+
+}
+
 section, .modal {
   border: $unit/2 solid $dark;
   padding: $unit/2;
