@@ -1,0 +1,34 @@
+- finish bio
+  - add to page.
+
+- projects
+  - link existing
+    - images
+  - add More
+    - storyteller
+      - resumes?
+      - Audiobooks?
+        - easy to link
+      - plays?
+        - written
+        - performed
+        - directed
+          - would I need to build pages for any of those?
+            -eventually yes... but for immediately?
+      - IMDb ?
+        - Prob needs updated
+      - Short film(s)?
+
+- styling
+  - tablet
+    - design
+    - code it
+  - desktop
+    - design
+    - code it
+
+- social links
+  - finish linking
+
+- cards
+  - fix rotate behavior
