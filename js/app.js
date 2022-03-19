@@ -70,8 +70,12 @@ filterTheProjects();
       filters.dev = false;
     }
 
+
     filterTheProjects();
     generateCards(filteredProjects);
+    cardSearch();
+
+
 
   });
 
@@ -82,8 +86,12 @@ filterTheProjects();
       filters.design = false;
     }
 
+
     filterTheProjects();
     generateCards(filteredProjects);
+    cardSearch();
+
+
 
   });
 
@@ -94,8 +102,12 @@ filterTheProjects();
       filters.story = false;
     }
 
+
     filterTheProjects();
     generateCards(filteredProjects);
+    cardSearch();
+
+
 
   });
 
