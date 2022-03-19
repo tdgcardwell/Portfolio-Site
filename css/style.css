@@ -140,3 +140,5 @@ section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-s
 .card a:not(.btn) { text-decoration: none; color: #e82980; transition: .5s; }
 
 .card a:not(.btn):hover { text-decoration: underline; }
+
+@media (min-width: 1024px) { .wrapper { margin: 0 auto; width: 100%; max-width: 1000px; } }
