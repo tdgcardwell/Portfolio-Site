@@ -28,12 +28,24 @@
 
 /* this was the irritating bit:
 When the overall thing is hovered, flip the bit in the middle!! */
-.card:hover .cardInner {
+// .card:hover .cardInner {
+//   transform: rotateY(180deg);
+// }
+
+
+.flipTheCard {
   transform: rotateY(180deg);
 }
 
 .cardBack {
   transform: rotateY(180deg);
+
+  .handwriting {
+    display: block;
+    text-align: left;
+    margin-bottom: $unit;
+  }
+
 }
 
 .cardFront {

@@ -69,9 +69,11 @@ input:checked + .slider::after { content: "SHOW"; position: absolute; top: 5px; 
 
 /* this was the irritating bit:
 When the overall thing is hovered, flip the bit in the middle!! */
-.card:hover .cardInner { transform: rotateY(180deg); }
+.flipTheCard { transform: rotateY(180deg); }
 
 .cardBack { transform: rotateY(180deg); }
+
+.cardBack .handwriting { display: block; text-align: left; margin-bottom: 2rem; }
 
 .cardFront { background-color: #f1eeeb; color: #211d2f; display: flex; gap: 1rem; }
 

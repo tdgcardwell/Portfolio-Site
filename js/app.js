@@ -173,6 +173,7 @@ function generateCards(data) {
           </div>
         </div>
         <div class="cardBack">
+          <span class="handwriting">X</span>
           <p class="center">${project.desc}</p>
           <a class="btn" href="${project.link}" target="_blank">View</a>
         </div>
@@ -190,3 +191,27 @@ function generateCards(data) {
 
 
 // filtered list then filtered by search bar.
+
+
+/*
+============================
+Flip the cards - not on hover!
+============================
+*/
+
+// click the button, show the back
+
+$(".cards").on( "click", ".cardFront .btn", function(event) {
+
+  $(this).parents(".cardInner").addClass("flipTheCard");
+
+});
+
+
+// click the 'X', return to the front
+
+$(".cards").on( "click", ".cardBack .handwriting", function(event) {
+
+  $(this).parents(".cardInner").removeClass("flipTheCard");
+
+});

@@ -13,9 +13,3 @@
   - desktop
     - design
     - code it
-
-- social links
-  - finish linking
-
-- cards
-  - fix rotate behavior
