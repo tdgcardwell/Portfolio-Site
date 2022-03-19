@@ -66,11 +66,34 @@ nav, footer {
 nav {
   ul {
     display: none;
+    padding: 0;
+
+    li {
+      list-style:none;
+      padding: 1rem;
+
+      &:not(.mobile-only) {
+        display: none;
+      }
+
+    }
+
   }
+
+  .handwriting {
+    display: none;
+  }
+}
+
+nav a,
+#backToTop a {
+  text-decoration: none;
+  color: $light;
 }
 
 footer {
   border-bottom: none;
+  padding-bottom: 2rem;
 }
 
 .social{
@@ -179,14 +202,8 @@ section, .modal {
 
 }
 
-
-@media (min-width:1024px) {
-
-  .wrapper {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1000px;
-  }
-
-
+#backToTop {
+  margin:1rem 0;
 }
+
+@import 'responsive'

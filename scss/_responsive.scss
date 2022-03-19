@@ -1,0 +1,144 @@
+@media (min-width:768px) {
+
+  header {
+    justify-content: center;
+  }
+
+  .skull-logo {
+    width: 25%;
+    flex-shrink: 0;
+  }
+
+  .logline {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+
+  .logline, .modal blockquote {
+    margin: 0 6rem;
+  }
+
+  .modal p {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .avatar {
+    width: 20%;
+    margin: 2rem 0 2rem;
+  }
+
+  nav {
+
+    padding: 0 0 1rem;
+
+    i, i:before {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        display: block!important;
+      }
+
+      .mobile-only {
+        display: none!important;
+      }
+
+    }
+
+  }
+
+  .sth {
+    min-height: 12rem;
+  }
+
+  .switches {
+    justify-content: center;
+  }
+
+  .stack {
+    margin: 0 .5rem;
+  }
+
+  #searchbar {
+    width: 45%;
+  }
+
+
+  .cards {
+    display: grid;
+    gap: .5rem;
+    padding: 0 .5rem 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+
+  .social {
+    margin: 0 30%;
+  }
+
+}
+
+
+
+@media (min-width:1024px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    justify-content: flex-end;
+    max-height: 150px;
+  }
+
+  .skull-logo {
+    margin-right: auto;
+    transform: translateY(22%);
+    z-index: 2;
+  }
+
+  // for distinction against background.
+  #bg {
+    fill:#fff
+  }
+
+  main, header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  header {
+    margin-top: .5rem;
+  }
+
+  section h2, .modal h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .modal .handwriting {
+    margin-right: 5rem;
+  }
+
+  #intro, #featured {
+    margin: 1rem 2rem;
+  }
+  .cards {
+    padding: 0 0 1rem;
+    gap: 1rem;
+  }
+
+  .social {
+    margin: 0 35%;
+  }
+
+}

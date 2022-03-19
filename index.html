@@ -125,25 +125,23 @@
 
 
       <nav>
+        <span class="handwriting">X</span>
         <i class="fa-solid fa-bars"></i>
         <ul>
-          <li>example</li>
+          <li class="mobile-only" onclick="navAbout()"><a href="#">About</a></li>
+          <li class="mobile-only" onclick="toggleNav()"><a href="#featured">Featured Work</a></li>
+          <li class="mobile-only" onclick="toggleNav()"><a href="#contact">Contact</a></li>
+          <li onclick="toggleModal()"><a href="#">About</a></li>
+          <li><a href="#featured">Featured Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
 
-    <!-- <h2 id="menu">menu</h2>
-    <ul>
-    <li>About</li>
-    <li>Examples</li>
-    <li>Contact</li>
-    <li>??</li>
-    </ul> -->
-
     <main>
 
-      <section>
-        <p>Favorite Uncle. Part Pirate - Part Wizard. Occasional Mustache-Twirling Villain.</p>
+      <section id="intro">
+        <p class="logline">Favorite Uncle. Part Pirate - Part Wizard.<br/>Occasional Mustache-Twirling Villain.</p>
         <div class="flex-box flex-end">
           <a class="btn" id="bioButton">More...</a>
         </div>
@@ -183,7 +181,7 @@
         CTA maybe?
       </div>
 
-      <section class="center">
+      <section class="center" id="featured">
         <h2>Featured Work</h2>
 
 
@@ -229,7 +227,10 @@
 
     </main>
 
-    <footer>
+    <footer id="contact">
+      <div id="backToTop">
+        <a href="#" class="handwriting">^ Back to Top</a>
+      </div>
 
       <div class="social">
 

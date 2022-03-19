@@ -66,6 +66,7 @@ When the overall thing is hovered, flip the bit in the middle!! */
     object-fit: cover;
     object-position: top;
     aspect-ratio:1/1;
+    max-height: 100%;
     border: .5rem solid #fff;
     margin: 0;
   }
