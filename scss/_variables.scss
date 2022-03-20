@@ -16,12 +16,15 @@ $unit: 2rem;
 
 // placeholder
 .sth {
-  min-height: 8rem;
+  min-height: 4rem;
   display: grid;
   place-items: center;
-  // background-image: url('../img/cta-placeholder.jpg');
-  background-color: #ccc;
-  background-position: top;
+  background:
+    linear-gradient($dark 0%, $pop 90%),
+    linear-gradient(to right, $dark 0%, $primary 90%),
+    linear-gradient($light 0%, $light 100%);
+  background-blend-mode: screen, multiply;
+  background-position: center;
   background-size: cover;
   // display: none;
 }

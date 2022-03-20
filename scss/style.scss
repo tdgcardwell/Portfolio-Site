@@ -172,6 +172,13 @@ section, .modal {
 
 }
 
+.cta .btn {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
 .switches {
   display: flex;
   justify-content: space-around;

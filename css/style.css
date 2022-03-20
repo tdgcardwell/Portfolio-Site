@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Pirata+One&family=Rock+Salt&display=swap");
-.sth { min-height: 8rem; display: grid; place-items: center; background-color: #ccc; background-position: top; background-size: cover; }
+.sth { min-height: 4rem; display: grid; place-items: center; background: linear-gradient(#211d2f 0%, #e82980 90%), linear-gradient(to right, #211d2f 0%, #ff5f1a 90%), linear-gradient(#f1eeeb 0%, #f1eeeb 100%); background-blend-mode: screen, multiply; background-position: center; background-size: cover; }
 
 .center { text-align: center; }
 
@@ -139,6 +139,8 @@ section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-s
 
 .btn:hover { background-color: #ff5f1a; color: #f1eeeb; text-decoration: underline; }
 
+.cta .btn { align-self: flex-end; justify-self: flex-end; margin-right: 1rem; margin-bottom: 1rem; }
+
 .switches { display: flex; justify-content: space-around; }
 
 .stack { display: flex; flex-direction: column; }
@@ -162,7 +164,7 @@ section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-s
   nav ul { display: flex; margin: 0; justify-content: center; align-items: center; }
   nav ul li { display: block !important; }
   nav ul .mobile-only { display: none !important; }
-  .sth { min-height: 12rem; }
+  .sth { min-height: 6rem; }
   .switches { justify-content: center; }
   .stack { margin: 0 .5rem; }
   #searchbar { width: 45%; }
