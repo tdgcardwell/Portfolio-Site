@@ -80,6 +80,14 @@
     margin-bottom: 2rem;
   }
 
+  .card img {
+    transition: .5s;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
   .social {
     margin: 0 30%;
   }

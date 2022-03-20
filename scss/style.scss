@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -148,7 +149,7 @@ section, .modal {
 
 .avatar {
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: .5rem solid $dark;
   aspect-ratio: 1/1;
   object-fit: cover;
   width: 40%;

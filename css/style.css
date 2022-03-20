@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Pirata+One&family=Rock+Salt&display=swap");
-.sth { min-height: 8rem; display: grid; place-items: center; background-image: url("../img/cta-placeholder.jpg"); background-position: top; background-size: cover; }
+.sth { min-height: 8rem; display: grid; place-items: center; background-color: #ccc; background-position: top; background-size: cover; }
 
 .center { text-align: center; }
 
@@ -40,7 +40,7 @@
 
 .switch input { opacity: 0; width: 0; height: 0; }
 
-.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #f1eeeb; border: 1px solid #211d2f; -webkit-transition: .5s; transition: .5s; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; border: 1px solid #211d2f; -webkit-transition: .5s; transition: .5s; }
 
 .slider:before { position: absolute; content: ""; height: 28px; width: 28px; left: 0; bottom: 0; background-color: #f1eeeb; border: 2px solid #211d2f; -webkit-transition: .5s; transition: .5s; }
 
@@ -85,7 +85,7 @@ When the overall thing is hovered, flip the bit in the middle!! */
 
 .cardBack { background-color: #211d2f; }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; scroll-behavior: smooth; }
 
 body { background-color: #211d2f; color: #f1eeeb; font-weight: 500; font-family: 'Manrope', sans-serif; }
 
@@ -133,7 +133,7 @@ section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-s
 
 .modal blockquote i { color: #e82980; }
 
-.avatar { border-radius: 50%; border: 2px solid #fff; aspect-ratio: 1/1; object-fit: cover; width: 40%; }
+.avatar { border-radius: 50%; border: 0.5rem solid #211d2f; aspect-ratio: 1/1; object-fit: cover; width: 40%; }
 
 .btn { display: inline-block; margin: 0; padding: .5rem 1rem; border: 1px solid #ff5f1a; text-decoration: none; color: #ff5f1a; transition: .5s; }
 
@@ -167,6 +167,8 @@ section h2, .modal h2 { font-family: 'Pirata One', serif; color: #e82980; font-s
   .stack { margin: 0 .5rem; }
   #searchbar { width: 45%; }
   .cards { display: grid; gap: .5rem; padding: 0 .5rem 1rem; grid-template-columns: 1fr 1fr; margin-bottom: 2rem; }
+  .card img { transition: .5s; }
+  .card img:hover { transform: scale(1.1); }
   .social { margin: 0 30%; } }
 
 @media (min-width: 1024px) { body { overflow-x: hidden; }

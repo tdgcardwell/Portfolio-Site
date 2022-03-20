@@ -39,7 +39,16 @@ newProj(
 */
 //  ================================
 
-
+newProj(
+  "Alex and Andy",
+  "etc/lemur/lemur-gallery.html",
+  "balloons.jpg",
+  "Character Design, Branding: SVG Illustration.",
+  "Cartoon Lemur Mascots for <a href='https://robertscamera.com/' target='_blank'>Roberts Camera</a> and <a href='https://usedphotopro.com/'' target='_blank'>UsedPhotoPro</a>. <br />Image Gallery <a href='https://tdgcardwell.github.io/Project-5_Interactive-Photo-Gallery/' target='_blank'>adapted from Techdegree Project</a>, using HTML, CSS, Javascript: An interactive, searchable gallery of photos.",
+  false,
+  true,
+  false
+);
 
 newProj(
   "NABU: Simple Shot Log",
@@ -93,17 +102,6 @@ newProj(
   "Techdegree Project. Players guess a random phrase by entering different letters into the program. Graded 'Exceeds Expectations'.",
   true,
   false,
-  false
-);
-
-newProj(
-  "Alex and Andy",
-  "etc/lemur/lemur-gallery.html",
-  "balloons.jpg",
-  "Character Design, Branding: SVG Illustration.",
-  "Cartoon Lemur Mascots for <a href='https://robertscamera.com/' target='_blank'>Roberts Camera</a> and <a href='https://usedphotopro.com/'' target='_blank'>UsedPhotoPro</a>. <br />Image Gallery <a href='https://tdgcardwell.github.io/Project-5_Interactive-Photo-Gallery/' target='_blank'>adapted from Techdegree Project</a>, using HTML, CSS, Javascript: An interactive, searchable gallery of photos.",
-  false,
-  true,
   false
 );
 
