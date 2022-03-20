@@ -60,12 +60,12 @@ input:checked + .slider::after { content: "SHOW"; position: absolute; top: 5px; 
 .slider.round:before { border-radius: 50%; }
 
 /* width and height on card */
-.card { background-color: #1a0800; width: 100%; height: 16.5rem; perspective: 500px; }
+.card { background-color: #1a0800; width: 100%; height: 16.5rem; -webkit-perspective: 500px; perspective: 500px; }
 
 /* container to position the faces */
 .cardInner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 1s; transform-style: preserve-3d; border-bottom: 1px solid #211d2f; }
 
-.cardFront, .cardBack { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; padding: 1rem; }
+.cardFront, .cardBack { position: absolute; width: 100%; height: 100%; -webkit-backface-visibility: hidden; backface-visibility: hidden; padding: 1rem; }
 
 /* this was the irritating bit:
 When the overall thing is hovered, flip the bit in the middle!! */

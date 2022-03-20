@@ -77,7 +77,7 @@ newProj(
   "https://usedphotopro.com/film-fix",
   "film-fix.png",
   "For UsedPhotoPro. Page for Film Fix film subscription service. HTML, CSS, Javascript.",
-  "'Film Fix is a subscription service where you receive two awesome film stocks delivered to your doorstep each month! At Film Fix we want to help you experience all the fun and creativity that film photography has to offer. We know there are a lot of film options to choose from. Film Fix will give you the opportunity to try a wonderful variety of films selected by the film lovers at UsedPhotoPro.''",
+  "'Film Fix is a subscription service where you receive two awesome film stocks delivered to your doorstep each month!'",
   true,
   false,
   false
