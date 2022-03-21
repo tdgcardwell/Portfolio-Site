@@ -93,7 +93,7 @@ main { position: relative; overflow-x: hidden; }
 
 .modal { position: absolute; top: 0; left: 0; z-index: 1; transition: .5s; transform: translate3d(100%, 0, 0); }
 
-.modalOn { transform: translate3d(0, 0, 0); }
+.modalOn { transform: translate3d(0, 0, 0); -webkit-box-shadow: 0px 10px 9px -6px rgba(33, 29, 47, 0.5); box-shadow: 0px 10px 9px -6px rgba(33, 29, 47, 0.5); }
 
 header { display: flex; padding: 1rem; gap: 2rem; align-items: center; }
 
