@@ -1,6 +1,3 @@
-- favicon
-  - png?
-  - update
-
-- CTA
-  - maybe photo for now?
+- social links
+  - titles
+  -size on desktop?

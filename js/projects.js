@@ -131,7 +131,7 @@ newProj(
   "The Snow Queen",
   "https://www.childrensmuseum.org/exhibits/lilly-theater",
   "sq.jpg",
-  "Writing: Stage Adptation. The Children's Museum of Indianapolis.",
+  "Writing: Stage Adaptation. The Children's Museum of Indianapolis.",
   "A new stage adaptation of Hans Christian Anderson's the Snow Queen. Winter '22 at the World's Largest Children's Museum.",
   false,
   false,
