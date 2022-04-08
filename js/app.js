@@ -174,7 +174,7 @@ function generateCards(data) {
       <div class="cardInner">
         <div class="cardFront">
           <div class="picture-box">
-            <a href="${project.link}" target="_blank"><img src="img/${project.img}" alt="${project.title}"></a>
+            <a href="${project.link}" target="_blank"><img src="/img/${project.img}" alt="${project.title}"></a>
           </div>
           <div class="full">
             <h3 class="center">${project.title}</h3>
