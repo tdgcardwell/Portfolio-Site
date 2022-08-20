@@ -197,7 +197,7 @@ newProj(
   "Titus Andronicus",
   "titus-andronicus.html",
   "titus/Aaron.jpg",
-  "Directing: Stage Adaptation. EclecticPond. Nominated: Best Director of a Play, Broadway World Indianapolis.",
+  "Directing/Adaptation: Stage. Nominated: Best Director of a Play, Broadway World Indianapolis.",
   "Shakespeare's bloodiest tragedy - however the play also contains a wealth of dark humor. After all, life is enriched by contrasts; Comedy and Tragedy. Light and Dark. Good and Evil. Peanut Butter and Jelly.",
   true,
   false,
