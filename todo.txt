@@ -1,3 +1,4 @@
 - social links
   - titles
   -size on desktop?
+  - about post link

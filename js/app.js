@@ -31,6 +31,22 @@ function toggleModal() {
 bioButton.click(toggleModal);
 closeModal.click(toggleModal);
 
+// ******* check for GET data being passed in
+		// get the search query
+	  const params = new Proxy(new URLSearchParams(window.location.search), {
+	    get: (searchParams, prop) => searchParams.get(prop),
+	  });
+	  // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
+	  // let value = params.some_key; // "some_value"
+
+  // b for bio / y for yes
+   let showBio = params.b;
+
+   if (showBio=='y') {
+     toggleModal();
+   }
+
+
 
 
 // =========== CTA? ===============
@@ -44,26 +60,42 @@ closeModal.click(toggleModal);
 
 // initial state
 let filters = {
-  dev: true,
-  design: false,
-  story: false
+  words: false,
+  pics: false,
+  more: true
 }
 
-let developer = $('#developer');
-let designer = $('#designer');
-let storyteller = $('#storyteller');
-
-
-if (filters.dev) {
-  developer.prop("checked", true);
+// check post - building this is now, so can control these sliders in links later if needed.
+let postWords = params.w;
+if (postWords=='y') {
+  filters.words=true;
 }
 
-if (filters.design) {
-  designer.prop("checked", true);
+let postPics = params.p;
+if (postPics=='y') {
+  filters.pics=true;
 }
 
-if (filters.story) {
-  storyteller.prop("checked", true);
+let postMore = params.m;
+if (postMore=='n') {
+  filters.more=false;
+}
+
+let words = $('#words');
+let pics = $('#pics');
+let more = $('#more');
+
+
+if (filters.words) {
+  words.prop("checked", true);
+}
+
+if (filters.pics) {
+  pics.prop("checked", true);
+}
+
+if (filters.more) {
+  more.prop("checked", true);
 }
 
 let filteredProjects = [];
@@ -73,15 +105,30 @@ filterTheProjects();
 
   // when a slider changes
 
-  developer.change(function() {
+  words.change(function() {
     if ($(this).is(":checked")) {
-      filters.dev = true;
+      filters.words = true;
     } else {
-      filters.dev = false;
+      filters.words = false;
     }
 
 
     filterTheProjects();
+
+    if (!filteredProjects.length){
+      let x = new Project(
+        "Yet Another Hidden Thing",
+        "notyet.html",
+        "balloons.jpg",
+        "You Again!",
+        "Maybe the same Adventure?",
+        false,
+        false,
+        true
+      );
+      filteredProjects.push(x);
+    }
+
     generateCards(filteredProjects);
     cardSearch();
 
@@ -89,15 +136,30 @@ filterTheProjects();
 
   });
 
-  designer.change(function() {
+  pics.change(function() {
     if ($(this).is(":checked")) {
-      filters.design = true;
+      filters.pics = true;
     } else {
-      filters.design = false;
+      filters.pics = false;
     }
 
 
     filterTheProjects();
+
+    if (!filteredProjects.length){
+      let x = new Project(
+        "Another Hidden Thing",
+        "notyet.html",
+        "balloons.jpg",
+        "Persistant!",
+        "Hi!",
+        false,
+        false,
+        true
+      );
+      filteredProjects.push(x);
+    }
+
     generateCards(filteredProjects);
     cardSearch();
 
@@ -105,15 +167,30 @@ filterTheProjects();
 
   });
 
-  storyteller.change(function() {
+  more.change(function() {
     if ($(this).is(":checked")) {
-      filters.story = true;
+      filters.more = true;
     } else {
-      filters.story = false;
+      filters.more = false;
     }
 
 
     filterTheProjects();
+
+    if (!filteredProjects.length){
+      let x = new Project(
+        "Hidden Thing",
+        "notyet.html",
+        "balloons.jpg",
+        "Hello There!",
+        "Eventually, an adventure...",
+        false,
+        false,
+        true
+      );
+      filteredProjects.push(x);
+    }
+
     generateCards(filteredProjects);
     cardSearch();
 
@@ -129,11 +206,13 @@ filterTheProjects();
 
       // for each project. if any of those match, push to filtered.
 
-      if ((project.dev && filters.dev) || (project.design && filters.design) || (project.story && filters.story)) {
+      if ((project.words && filters.words) || (project.pics && filters.pics) || (project.more && filters.more)) {
         filteredProjects.push(project);
       }
 
+
     });
+
 
 
   }
@@ -174,7 +253,7 @@ function generateCards(data) {
       <div class="cardInner">
         <div class="cardFront">
           <div class="picture-box">
-            <a href="${project.link}" target="_blank"><img src="/img/${project.img}" alt="${project.title}"></a>
+            <a href="${project.link}" target="_blank"><img src="img/${project.img}" alt="${project.title}"></a>
           </div>
           <div class="full">
             <h3 class="center">${project.title}</h3>
@@ -183,7 +262,7 @@ function generateCards(data) {
           </div>
         </div>
         <div class="cardBack">
-          <span class="handwriting">X</span>
+          <span class="handwriting close">X</span>
           <p class="center">${project.desc}</p>
           <a class="btn" href="${project.link}" target="_blank">View</a>
         </div>

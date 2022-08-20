@@ -1,0 +1,80 @@
+.ez-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.ez-1_2, .ez-1_3, .ez-1_4, .ez-1_6,
+.ez-2_3, .ez-3_4, .ez-5_6, .ez-full {
+  padding: 15px;
+}
+
+.border {
+  border: 1px solid $primary;
+}
+
+.solid {
+  background-color: $light;
+  color: $dark;
+}
+
+.ez-center {
+  display: grid;
+  place-content: center;
+  min-height: 4rem;
+
+  i {
+    font-size:6rem;
+  }
+}
+
+.ez-card {
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+@media (min-width:768px) {
+
+  .ez-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .ez-full{
+    grid-column-end: span 12;
+  }
+
+  .ez-1_2{
+    grid-column-end: span 6;
+  }
+
+  .ez-1_3{
+    grid-column-end: span 4;
+  }
+
+  .ez-2_3{
+    grid-column-end: span 8;
+  }
+
+  .ez-1_4{
+    grid-column-end: span 3;
+  }
+
+  .ez-3_4{
+    grid-column-end: span 9;
+  }
+
+  .ez-1_6{
+    grid-column-end: span 2;
+  }
+
+  .ez-5_6{
+    grid-column-end: span 10;
+  }
+
+
+}

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Pirata+One&family=Rock+Salt&display=swap');
-@import 'variables','skull', 'slider', 'cards';
+@import 'variables','skull', 'slider', 'cards','project';
 
 
 // =====================
@@ -28,6 +28,15 @@ main {
   z-index: 1;
   transition: .5s;
   transform: translate3d(100%, 0, 0);
+
+  a {
+    text-decoration: none;
+    // color: $pop;
+    // display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
 }
 
 .modalOn {
@@ -99,6 +108,10 @@ footer {
   padding-bottom: 2rem;
 }
 
+.close {
+  cursor: pointer;
+}
+
 .social{
   display:flex;
   gap:3rem;
@@ -149,6 +162,10 @@ section, .modal {
   }
 }
 
+h3 {
+  text-align: center;
+}
+
 .avatar {
   border-radius: 50%;
   border: .5rem solid $dark;
@@ -170,6 +187,7 @@ section, .modal {
     background-color: $primary;
     color: $light;
     text-decoration: underline;
+    cursor: pointer;
   }
 
 }
@@ -180,6 +198,8 @@ section, .modal {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
+
+
 
 .switches {
   display: flex;
@@ -216,4 +236,4 @@ section, .modal {
   margin:1rem 0;
 }
 
-@import 'responsive'
+@import 'responsive','ez-grid';

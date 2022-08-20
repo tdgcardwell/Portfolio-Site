@@ -1,4 +1,3 @@
-
 $dark : #211d2f;
 $light: #f1eeeb;
 $primary: #ff5f1a;
@@ -14,7 +13,6 @@ $unit: 2rem;
 
 // =========== utility classes
 
-// placeholder
 .sth {
   min-height: 4rem;
   display: grid;
@@ -26,7 +24,15 @@ $unit: 2rem;
   background-blend-mode: screen, multiply;
   background-position: center;
   background-size: cover;
-  // display: none;
+  color: #fff;
+  padding: 15px;
+
+  h2 {
+    @include pirata;
+    font-size: 3rem;
+    text-align: center;
+  }
+
 }
 
 .center {
@@ -52,4 +58,10 @@ $unit: 2rem;
 
 .handwriting {
   @include rockSalt;
+}
+
+h2.pirate {
+  @include pirata;
+  font-size: 3rem;
+  text-align: center;
 }

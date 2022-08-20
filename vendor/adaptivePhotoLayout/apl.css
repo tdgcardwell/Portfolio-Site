@@ -1,0 +1,89 @@
+/*
+Borrowed from:
+https://codepen.io/maxvoltar/pen/eYOPdMG
+Tim Van Damme
+*/
+
+/* BASIC */
+
+ul.apl {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin:0;
+}
+
+ul.apl li {
+  height: 30vh;
+  /* max-width: 30%; */
+  flex-grow: 1;
+  list-style-type: none;
+  overflow:hidden;
+}
+
+ul.apl li:last-child {
+  /* There's no science in using "10" here. In all my testing, this delivered the best results. */
+  /* flex-grow: 10; */
+}
+
+ul.apl img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  /* vertical-align: bottom; */
+}
+
+/* ADVANCED */
+
+/* Portrait */
+
+@media (max-aspect-ratio: 1/1) {
+  ul.apl li {
+    height: 30vh;
+  }
+}
+
+/* Short screens */
+
+@media (max-height: 480px) {
+  ul.apl li {
+    height: 80vh;
+  }
+}
+
+/* Smaller screens in portrait */
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  ul.apl ul {
+    flex-direction: row;
+  }
+
+  ul.apl li {
+    height: auto;
+    width: 100%;
+  }
+  ul.apl img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
+/* additional adjustments */
+@media (min-width: 780px) {
+  ul.apl li {
+    opacity: 0.75;
+    transition: .5s;
+    min-width:17%;
+  }
+
+  ul.apl li:hover {
+    opacity:1;
+  }
+
+  /* nav {
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+  } */
+}

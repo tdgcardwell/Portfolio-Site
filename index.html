@@ -126,14 +126,17 @@
 
 
       <nav>
-        <span class="handwriting">X</span>
+        <span class="handwriting close">X</span>
         <i class="fa-solid fa-bars"></i>
         <ul>
           <li class="mobile-only" onclick="navAbout()"><a href="#">About</a></li>
           <li class="mobile-only" onclick="toggleNav()"><a href="#featured">Featured Work</a></li>
+          <li class="mobile-only" onclick="toggleNav()"><a href="faq.html">FAQ</a></li>
           <li class="mobile-only" onclick="toggleNav()"><a href="#contact">Contact</a></li>
+
           <li onclick="toggleModal()"><a href="#">About</a></li>
           <li><a href="#featured">Featured Work</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -142,7 +145,9 @@
     <main>
 
       <section id="intro">
-        <p class="logline">Favorite Uncle. Part Pirate - Part Wizard.<br/>Occasional Mustache-Twirling Villain.</p>
+        <p class="logline">Favorite Uncle. Part Pirate - Part Wizard.<br/>Occasional Mustache-Twirling Villain.<br>
+          Designer, Developer, Storyteller.
+        </p>
         <div class="flex-box flex-end">
           <a class="btn" id="bioButton">More...</a>
         </div>
@@ -151,22 +156,23 @@
       <!-- hidden -->
       <div class="modal">
 
-        <span class="handwriting" id="closeModal">X</span>
+        <span class="handwriting close" id="closeModal">X</span>
 
         <h2 class="center">About</h2>
 
-        <blockquote class="blockquote"><i class="fas fa-quote-left" aria-hidden="true"></i> We are not <em>nouns</em>, we are <em>verbs</em>.<br>
-              I am not a thing - an actor, a writer... <br>I am a person who does things - I write, I act - and I never know what I'm going to do next. I think you can be imprisoned if you think of yourself as a noun. <i class="fas fa-quote-right" aria-hidden="true"></i><br>&nbsp;<br></blockquote>
+        <blockquote class="blockquote"><i class="fas fa-quote-left" aria-hidden="true"></i> We are not <em>nouns</em>, we are <em>verbs</em>. I am not a thing - an actor, a writer... I am a person who does things - I write, I act - and I never know what I'm going to do next. I think you can be imprisoned if you think of yourself as a noun. <i class="fas fa-quote-right" aria-hidden="true"></i><br>&nbsp;<br></blockquote>
 
               <div class="flex-box flex-end">
                 <span class="handwriting">- Stephen Fry</span>
               </div>
 
-              <p>I’ve always loved telling stories.</p>
+              <h3>I have always loved telling stories.</h3>
 
               <p>After nearly two decades working as a freelance creative professional, I’ve gotten pretty good at balancing both the artistic and technical skill sets.</p>
 
               <p>However you’re telling that story - whether directing a play, taking a photograph, or building a website - I believe you can distill the process to this: isolate the important information, then present it in the best possible light for the audience you are addressing.</p>
+
+              <p style="text-align:center;"><a class="btn" href="faq.html">Any Questions?</a></p>
 
               <div class="flex-box flex-center">
                 <!-- Fix this -->
@@ -179,37 +185,38 @@
       </div>
 
       <div class="sth cta">
-
+        <h2>Moving Words and Pictures</h2>
+        <p style="margin:3rem; margin-top:0; font-size:1.1rem;">From a young age, my Sister and I would invent and perform plays for my Parents, Grandparents, and anyone else we could persuade to sit still long enough to watch. I remember, from a young age,  watching films, and instead of thinking - Oh, I want to be a (Spy/ Astronaut/ Cowboy/ etc.) - I would finding myself dreaming about <em>telling</em> those stories. A good story can have a profound effect on you - a <em>great</em> story can change the world.</p>
       </div>
 
       <section class="center" id="featured">
         <h2>Featured Work</h2>
 
-
         <div class="switches">
+
           <div class="stack">
-            <label for="developer">Developer</label>
+            <label for="words">Words</label>
 
             <label class="switch">
-              <input type="checkbox" id="developer" name="developer" value="developer">
+              <input type="checkbox" id="words" name="words" value="words">
               <span class="slider round"></span>
             </label><br>
           </div>
 
           <div class="stack">
-            <label for="designer">Designer</label>
+            <label for="pics">Pictures</label>
 
             <label class="switch">
-              <input type="checkbox" id="designer" name="designer" value="designer">
+              <input type="checkbox" id="pics" name="pics" value="pics">
               <span class="slider round"></span>
             </label><br>
           </div>
 
           <div class="stack">
-            <label for="storyteller">Storyteller</label>
+            <label for="more">& More</label>
 
             <label class="switch">
-              <input type="checkbox" id="storyteller" name="storyteller" value="storyteller">
+              <input type="checkbox" id="more" name="more" value="more">
               <span class="slider round"></span>
             </label><br>
           </div>
