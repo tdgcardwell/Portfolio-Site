@@ -1,23 +1,3 @@
-// =========== Nav Menu ===============
-let navMenu = $('nav i');
-let navList = $('nav ul');
-let navClose = $('nav .handwriting');
-
-function toggleNav() {
-  navList.toggle("slow");
-  navMenu.toggle();
-  navClose.toggle();
-}
-
-navMenu.click(toggleNav);
-navClose.click(toggleNav);
-
-// for about link
-function navAbout(){
-  toggleNav();
-  toggleModal();
-}
-
 // =========== Bio Modal ===============
 
 let bioButton = $('#bioButton');
@@ -60,9 +40,9 @@ closeModal.click(toggleModal);
 
 // initial state
 let filters = {
-  words: false,
+  words: true,
   pics: false,
-  more: true
+  more: false
 }
 
 // check post - building this is now, so can control these sliders in links later if needed.
